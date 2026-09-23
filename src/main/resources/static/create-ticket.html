@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Ticket - Customer Support CRM</title>
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+
+		<div class="container header-content">
+
+			<div class="logo">Customer Support CRM</div>
+
+			<a href="/" class="create-button"> Back to Tickets </a>
+
+		</div>
+
+	</header>
+
+
+	<main class="main">
+
+		<div class="container">
+
+			<section class="page-title">
+
+				<h1>Create Support Ticket</h1>
+
+				<p>Add a new customer support request.</p>
+
+			</section>
+
+
+			<section class="form-container">
+
+				<form id="ticketForm">
+
+					<div class="form-group">
+
+						<label for="customerName"> Customer Name </label> <input
+							type="text" id="customerName" name="customerName"
+							placeholder="Enter customer name" required>
+
+					</div>
+
+
+					<div class="form-group">
+
+						<label for="customerEmail"> Customer Email </label> <input
+							type="email" id="customerEmail" name="customerEmail"
+							placeholder="Enter customer email" required>
+
+					</div>
+
+
+					<div class="form-group">
+
+						<label for="subject"> Issue Title </label> <input type="text"
+							id="subject" name="subject" placeholder="Enter issue title"
+							required>
+
+					</div>
+
+
+					<div class="form-group">
+
+						<label for="description"> Issue Description </label>
+
+						<textarea id="description" name="description" rows="6"
+							placeholder="Describe the customer issue" required></textarea>
+
+					</div>
+
+
+					<div id="formMessage"></div>
+
+
+					<button type="submit" class="submit-button">
+						Create Ticket</button>
+
+				</form>
+
+			</section>
+
+		</div>
+
+	</main>
+	<script src="/js/create-ticket.js"></script>
+
+</body>
+</html>

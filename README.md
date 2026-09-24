@@ -374,7 +374,7 @@ The application implements the core customer support ticketing functionality req
 
 The application will be deployed as a public web application before final submission.
 
-Deployment URL: To be added after deployment.
+Deployment URL: https://customer-support-crm-production-e61e.up.railway.app/
 
 ## Submission Deliverables
 

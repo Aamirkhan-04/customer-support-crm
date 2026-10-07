@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer Support CRM</title>
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+
+		<div class="container header-content">
+
+			<div class="logo">Customer Support CRM</div>
+
+			<a href="/create-ticket.html" class="create-button"> + Create
+				Ticket </a>
+
+		</div>
+
+	</header>
+
+	<main class="main">
+
+		<div class="container">
+
+			<section class="page-title">
+
+				<h1>Support Tickets</h1>
+
+				<p>Manage and track customer support requests.</p>
+
+			</section>
+
+
+			<section class="filters">
+
+				<input type="text" id="searchInput" class="search-input"
+					placeholder="Search by ticket ID, customer name, email or description...">
+
+				<select id="statusFilter" class="status-filter">
+
+					<option value="">All Status</option>
+					<option value="Open">Open</option>
+					<option value="In Progress">In Progress</option>
+					<option value="Closed">Closed</option>
+
+				</select>
+
+			</section>
+
+
+			<section class="ticket-table-container">
+
+				<table class="ticket-table">
+
+					<thead>
+						<tr>
+							<th>Ticket ID</th>
+							<th>Customer Name</th>
+							<th>Subject</th>
+							<th>Status</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+
+					<tbody id="ticketTableBody">
+
+						<tr>
+							<td colspan="5" class="empty-message">Loading tickets...</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+
+			</section>
+
+		</div>
+
+	</main>
+	<script src="/js/app.js"></script>
+</body>
+</html>

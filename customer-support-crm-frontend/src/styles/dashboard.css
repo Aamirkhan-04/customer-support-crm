@@ -1,0 +1,937 @@
+/* ========================================
+   COMMON CRM DASHBOARD STYLES
+======================================== */
+
+.dashboard-page {
+  width: 100%;
+}
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.dashboard-page-header {
+  margin-bottom: 22px;
+}
+
+.dashboard-page-header h1 {
+  margin: 0 0 5px;
+  color: #172554;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.dashboard-page-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ========================================
+   WELCOME BANNER
+======================================== */
+
+.dashboard-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 165px;
+  margin-bottom: 28px;
+  padding: 34px 38px;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  background: linear-gradient(
+    110deg,
+    #1e3a8a 0%,
+    #2563eb 100%
+  );
+
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.18);
+}
+
+.dashboard-welcome-content {
+  color: #ffffff;
+}
+
+.dashboard-welcome-label {
+  margin-bottom: 10px;
+
+  color: #bfdbfe;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+.dashboard-welcome h2 {
+  margin: 0 0 6px;
+
+  color: #ffffff;
+
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+.dashboard-welcome p {
+  margin: 0;
+
+  color: #dbeafe;
+
+  font-size: 13px;
+}
+
+.dashboard-welcome-icon {
+  width: 84px;
+  height: 84px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 17px;
+
+  background: rgba(255, 255, 255, 0.09);
+
+  color: #ffffff;
+}
+
+/* ========================================
+   SECTION
+======================================== */
+
+.dashboard-section {
+  margin-bottom: 28px;
+}
+
+.dashboard-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.dashboard-section-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin: 0;
+
+  color: #172554;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.dashboard-section-header span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* ========================================
+   DASHBOARD CARDS
+======================================== */
+
+.dashboard-card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.dashboard-card {
+  width: 100%;
+  min-height: 95px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 15px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #ffffff;
+  color: #172554;
+
+  text-align: left;
+
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.03);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #bfdbfe;
+
+  background: #ffffff;
+
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.07);
+}
+
+.dashboard-card-static {
+  cursor: default;
+}
+
+.dashboard-card-static:hover {
+  transform: none;
+}
+
+.dashboard-card-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.dashboard-card-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.dashboard-card-content h3 {
+  margin: 0 0 3px;
+
+  color: #172554;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dashboard-card-content p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.dashboard-card-count {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #2563eb;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dashboard-card-arrow {
+  flex-shrink: 0;
+  color: #94a3b8;
+}
+
+/* ========================================
+   TABLE CONTAINER
+======================================== */
+
+.dashboard-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.03);
+}
+
+.dashboard-table {
+  width: 100%;
+  min-width: 900px;
+
+  margin: 0;
+
+  border: 0;
+
+  border-collapse: collapse;
+
+  box-shadow: none;
+}
+
+.dashboard-table thead {
+  background: #f8fafc;
+}
+
+.dashboard-table th {
+  padding: 13px 14px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+.dashboard-table td {
+  padding: 13px 14px;
+
+  border-bottom: 1px solid #eef2f7;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  vertical-align: middle;
+}
+
+.dashboard-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.dashboard-table tbody tr:hover {
+  background: #fafcff;
+}
+
+.dashboard-table td strong {
+  color: #1e40af;
+  font-weight: 700;
+}
+
+/* ========================================
+   TABLE ACTIONS
+======================================== */
+
+.dashboard-table-action {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  min-width: 210px;
+}
+
+.dashboard-table-action select {
+  min-width: 125px;
+
+  padding: 7px 9px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #334155;
+
+  font-size: 11px;
+}
+
+.dashboard-table-action button {
+  flex-shrink: 0;
+}
+
+.dashboard-secondary-button {
+  padding: 7px 10px;
+
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dashboard-secondary-button:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.dashboard-success-button,
+.dashboard-danger-button {
+  padding: 7px 11px;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dashboard-success-button {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.dashboard-success-button:hover {
+  background: #dcfce7;
+}
+
+.dashboard-danger-button {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.dashboard-danger-button:hover {
+  background: #fee2e2;
+}
+
+/* ========================================
+   VIEW BUTTON
+======================================== */
+
+.dashboard-view-button {
+  padding: 7px 12px;
+
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dashboard-view-button:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* ========================================
+   FORM CARD
+======================================== */
+
+.dashboard-form-card {
+  padding: 22px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.03);
+}
+
+.dashboard-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 21px;
+}
+
+.dashboard-form-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.dashboard-form-heading h3 {
+  margin: 0 0 3px;
+
+  color: #172554;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.dashboard-form-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.dashboard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dashboard-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.dashboard-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dashboard-form-field label {
+  color: #334155;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dashboard-form-field input,
+.dashboard-form-field select,
+.dashboard-form-field textarea {
+  width: 100%;
+
+  padding: 10px 12px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #334155;
+
+  font-size: 13px;
+
+  outline: none;
+}
+
+.dashboard-form-field input::placeholder,
+.dashboard-form-field textarea::placeholder {
+  color: #a1aab8;
+}
+
+.dashboard-form-field textarea {
+  min-height: 120px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+.dashboard-form-field input:focus,
+.dashboard-form-field select:focus,
+.dashboard-form-field textarea:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.dashboard-form-helper {
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.dashboard-form-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  padding-top: 4px;
+}
+
+.dashboard-form-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dashboard-form-actions button:hover {
+  background: #1d4ed8;
+}
+
+/* ========================================
+   USER CELL
+======================================== */
+
+.dashboard-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  min-width: 130px;
+}
+
+.dashboard-user-avatar {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #dbeafe;
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ========================================
+   ROLE BADGE
+======================================== */
+
+.crm-role-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  background: #eff6ff;
+  color: #1d4ed8;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* ========================================
+   USER STATUS
+======================================== */
+
+.crm-user-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.crm-user-status.enabled {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.crm-user-status.disabled {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* ========================================
+   BACK BUTTON
+======================================== */
+
+.dashboard-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #475569;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.dashboard-back-button:hover {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* ========================================
+   SUCCESS / ERROR / LOADING / EMPTY
+======================================== */
+
+.dashboard-success {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+  padding: 11px 14px;
+
+  border: 1px solid #bbf7d0;
+  border-radius: 9px;
+
+  background: #f0fdf4;
+  color: #15803d;
+
+  font-size: 12px;
+}
+
+.dashboard-error {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+
+  background: #fef2f2;
+  color: #b91c1c;
+
+  font-size: 13px;
+}
+
+.dashboard-empty {
+  padding: 30px;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.dashboard-loading {
+  padding: 30px;
+
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 14px;
+}
+
+/* ========================================
+   STATUS BADGES
+======================================== */
+
+.crm-status,
+.crm-priority {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.crm-status-open {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.crm-status-in-progress {
+  background: #fffbeb;
+  color: #b45309;
+}
+
+.crm-status-closed {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+/* ========================================
+   PRIORITY BADGES
+======================================== */
+
+.crm-priority-low {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.crm-priority-medium {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.crm-priority-high {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.crm-priority-urgent {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* ========================================
+   DETAIL DESCRIPTION
+======================================== */
+
+.dashboard-detail-description {
+  margin-top: 18px;
+}
+
+.dashboard-detail-description textarea {
+  min-height: 140px;
+}
+
+/* ========================================
+   LIST
+======================================== */
+
+.dashboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-list-card {
+  padding: 16px 18px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.03);
+}
+
+.dashboard-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-bottom: 9px;
+}
+
+.dashboard-list-header > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboard-list-header strong {
+  color: #172554;
+  font-size: 13px;
+}
+
+.dashboard-list-header small {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.dashboard-list-card p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1100px) {
+
+  .dashboard-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .dashboard-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .dashboard-welcome {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .dashboard-welcome h2 {
+    font-size: 26px;
+  }
+
+  .dashboard-welcome-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .dashboard-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-form-card {
+    padding: 18px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .dashboard-welcome {
+    padding: 20px;
+  }
+
+  .dashboard-welcome-icon {
+    display: none;
+  }
+
+  .dashboard-page-header h1 {
+    font-size: 24px;
+  }
+
+  .dashboard-form-actions {
+    justify-content: stretch;
+  }
+
+  .dashboard-form-actions button {
+    width: 100%;
+  }
+
+}
